@@ -190,7 +190,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 10px;
-  border: solid 1px #e1e1e1;
+  border: solid 1px transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,8 +199,8 @@ body {
 }
 
 .child-menu-item a .icon img {
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 
@@ -208,6 +208,10 @@ body {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 5px;
+}
+
+.child-menu-item a:hover .meta .title {
+  color: var(--color-red);
 }
 
 .child-menu-item a .meta .desc {
@@ -735,6 +739,10 @@ body {
   display: block;
   color: var(--color-text);
   text-decoration: none;
+}
+
+.home-blog-meta .title:hover {
+  color: var(--color-red);
 }
 
 .home-blog-meta .date {
