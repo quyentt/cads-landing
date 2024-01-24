@@ -29,10 +29,22 @@ $(document).ready(function () {
     spaceBetween: 30,
     slidesPerView: 1,
     freeMode: false,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+
+    loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
+  });
+  $(".customer-slider").mouseenter(function () {
+    swiper.autoplay.stop();
+  });
+  $(".customer-slider").mouseleave(function () {
+    swiper.autoplay.start();
   });
   // $("#register").modal("show");
 
@@ -57,5 +69,26 @@ $(document).ready(function () {
   $("#video_pop").on("hide.bs.modal", function (e) {
     // a poor man's stop video
     $("#video").attr("src", $videoSrc);
+  });
+
+  // go top
+  var btn = $("#button");
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass("show");
+    } else {
+      btn.removeClass("show");
+    }
+  });
+
+  btn.on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      "300"
+    );
   });
 });

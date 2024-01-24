@@ -1339,24 +1339,5 @@
 <script src="assets/swiper-slide-11.0.5/swiper-bundle.min.js"></script>
 <script src="assets/js/jquery-3.7.1.min.js"></script>
 <script src="assets/js/customs.js"></script>
-<script>
-    var btn = $('#button');
-
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 300) {
-            btn.addClass('show');
-        } else {
-            btn.removeClass('show');
-        }
-    });
-
-    btn.on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: 0
-        }, '300');
-    });
-</script>
-
 
 </html>
