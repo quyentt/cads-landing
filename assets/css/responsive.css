@@ -26,6 +26,9 @@
 }
 
 @media (max-width: 1280px) {
+  .customer-story::before {
+    top: 150px;
+  }
   .app-link {
     padding: 60px var(--gutter);
   }
