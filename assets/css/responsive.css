@@ -334,6 +334,9 @@
 }
 
 @media (max-width: 768px) {
+  .banner {
+    background-size: 224%;
+  }
   .our-value-list {
     padding: 0 20px;
   }
