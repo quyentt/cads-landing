@@ -1358,7 +1358,8 @@ body {
   height: 45px;
 }
 
-.register-form .form-control:focus {
+.register-form .form-control:focus,
+.register-form .form-select:focus {
   outline: none;
   box-shadow: none;
 }
