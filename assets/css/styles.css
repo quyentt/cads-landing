@@ -1333,6 +1333,9 @@ body {
   color: var(--color-text);
   width: 30px;
   height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .register-form .title {
