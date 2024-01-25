@@ -983,6 +983,15 @@ body {
   align-items: center;
   justify-content: center;
   padding: 3px;
+  transition: all 0.3s;
+}
+
+.our-customer-box:hover {
+  transform: translateY(-3px);
+}
+
+.our-customer-box:active {
+  transform: translateY(-1px);
 }
 
 .our-customer-box img {
@@ -1240,6 +1249,10 @@ body {
   font-weight: 500;
 }
 
+.footer-box-link a:hover {
+  color: var(--color-red);
+}
+
 .footer-box-link a .list-style {
   width: 4px;
   height: 4px;
@@ -1316,14 +1329,17 @@ body {
   border-radius: 100%;
   border: solid 1px #cccccc;
   background: #fff;
+  color: var(--color-text);
+  width: 30px;
+  height: 30px;
 }
 
 .register-form .title {
   font-size: 33px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 800;
   text-align: center;
   margin-bottom: 30px;
+  line-height: 35px;
 }
 
 .register-form .form-group {
@@ -1336,7 +1352,8 @@ body {
   margin-bottom: 5px;
 }
 
-.register-form .form-control {
+.register-form .form-control,
+.register-form .form-select {
   height: 45px;
 }
 
