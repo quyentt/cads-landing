@@ -1116,6 +1116,7 @@ body {
 
 .app-link-list .link .item img {
   width: 100%;
+  aspect-ratio: 201 / 59;
 }
 
 .app-link-list .intro {
