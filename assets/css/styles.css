@@ -364,6 +364,18 @@ body {
   background-position: bottom center;
 }
 
+.banner.banner-2 {
+  background: #f9e6bb;
+  background-image: url("../images/banner/banner-bg-2.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: bottom center;
+}
+
+.banner.banner-2 .banner-image {
+  margin-bottom: 18px;
+}
+
 .banner-content {
   display: flex;
   flex-direction: column;

@@ -17,6 +17,9 @@
   .banner {
     background-size: cover;
   }
+  .banner.banner-2 {
+    background-size: cover;
+  }
 }
 
 @media (max-width: 1360px) {
@@ -239,6 +242,9 @@
 }
 
 @media (max-width: 820px) {
+  .banner.banner-2 {
+    background-size: 195%;
+  }
   .footer-social {
     width: 50%;
     margin-top: 30px;
@@ -253,6 +259,7 @@
   .footer-address {
     width: 100%;
     flex: inherit;
+    order: 4;
   }
   .contact-group-list {
     padding-bottom: 0;
@@ -430,6 +437,9 @@
 }
 
 @media (max-width: 600px) {
+  .banner.banner-2 {
+    background-size: 203%;
+  }
   .footer-social {
     width: 100%;
     order: 4;
@@ -439,7 +449,7 @@
     margin-top: 40px;
   }
   .footer-box-link {
-    width: 100%;
+    width: 50%;
   }
   .footer-box-link.one {
     order: 1;
