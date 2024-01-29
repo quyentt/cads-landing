@@ -1229,6 +1229,7 @@ body {
 .footer-address .item .icon {
   flex-shrink: 0;
   margin-right: 30px;
+  width: 50px;
 }
 
 .footer-address .item .plate {
